@@ -16,3 +16,4 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 ## About
+An implementation of the [lunch time app mockup](https://www.figma.com/file/NpOa9cxn6MRWJDnfDz3lgrFB/LunchTime-UI-KIT-by-Netguru?node-id=0%3A1 "Link to Lunchtime app mockups on Figma")
