@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../constants/app_images.dart';
 import '../widgets/screen_data.dart';
+import '../widgets/wave_painter.dart';
 
 class LoginScreen extends StatefulWidget {
 
@@ -18,7 +19,8 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          margin: EdgeInsets.symmetric(horizontal: ScreenData.blockSizeHorizontal * 4.166),
+          //margin: EdgeInsets.symmetric(horizontal: ScreenData.blockSizeHorizontal * 4.166),
+          height: ScreenData.screenHeight,
           child: Column(
             children: <Widget>[
               SizedBox(height: ScreenData.screenHeight * 0.15625,),
@@ -29,7 +31,14 @@ class _LoginScreenState extends State<LoginScreen> {
                 ],
               ),
               Text('Lunch Time'),
-              Text('Ready for munchies?')
+              Text('Ready for munchies?'),
+              Expanded(
+                child: CustomPaint(
+                  child: Container(
+                  ),
+                  painter: WavePainter(),
+                ),
+              )
             ],
           ),
         )
