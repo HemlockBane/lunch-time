@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../constants/app_images.dart';
 import '../widgets/screen_data.dart';
 import '../widgets/wave_painter.dart';
+import '../widgets/button.dart';
 
 class LoginScreen extends StatefulWidget {
 
@@ -32,10 +33,20 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               Text('Lunch Time'),
               Text('Up for munchies?'),
-              Expanded(
-                child: Container(
-                  width: ScreenData.screenWidth,
-                  child: Image.asset(AppImages.wavyBackground, fit: BoxFit.cover,),
+              //
+              Container(
+                height: ScreenData.screenHeight * 0.484,
+                child: Stack(
+                  children: <Widget>[
+                    Container(
+                      width: ScreenData.screenWidth,
+                      child: Image.asset(AppImages.wavyBackground, fit: BoxFit.cover,),
+                    ),
+                    Column(
+                      children: <Widget>[
+                      ],
+                    )
+                  ],
                 ),
               )
             ],
