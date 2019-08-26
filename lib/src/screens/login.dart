@@ -42,10 +42,15 @@ class _LoginScreenState extends State<LoginScreen> {
                       width: ScreenData.screenWidth,
                       child: Image.asset(AppImages.wavyBackground, fit: BoxFit.cover,),
                     ),
-                    Column(
-                      children: <Widget>[
-                      ],
-                    )
+//                    SizedBox(height: 10,),
+//                    Button.signInOption(
+//                      context: context,
+//                      buttonColor: Colors.white,
+//                      labelColor: Colors.black,
+//                      iconData: Icons.message,
+//                      borderRadius: 10,
+//                      onPressed: (){}
+//                    )
                   ],
                 ),
               )
