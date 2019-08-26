@@ -31,12 +31,11 @@ class _LoginScreenState extends State<LoginScreen> {
                 ],
               ),
               Text('Lunch Time'),
-              Text('Ready for munchies?'),
+              Text('Up for munchies?'),
               Expanded(
-                child: CustomPaint(
-                  child: Container(
-                  ),
-                  painter: WavePainter(),
+                child: Container(
+                  width: ScreenData.screenWidth,
+                  child: Image.asset(AppImages.wavyBackground, fit: BoxFit.cover,),
                 ),
               )
             ],
