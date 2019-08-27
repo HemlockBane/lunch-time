@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:lunch_time_app/src/widgets/theme.dart';
 import '../constants/app_images.dart';
 import '../widgets/screen_data.dart';
-import '../widgets/wave_painter.dart';
+import '../screens/slack_team_email.dart';
 import '../widgets/button.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -33,7 +33,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ],
               ),
               Text(' '),
-              Text('Up for munchies?', style: Theme.of(context).textTheme.body1.copyWith(color: AppTheme.greyText
+              Text('Up for munchies?', style: Theme.of(context).textTheme.body1.copyWith(color: AppTheme.greySubText
               ),),
               //
               Container(
@@ -57,7 +57,9 @@ class _LoginScreenState extends State<LoginScreen> {
                               labelColor: AppTheme.peachButton,
                               iconData: Icons.message,
                               borderRadius: 30,
-                              onPressed: (){}
+                              onPressed: (){
+                                Navigator.pushNamed(context, SlackTeamEmailScreen.routeName);
+                              }
                           ),
                         ),
                         Container(

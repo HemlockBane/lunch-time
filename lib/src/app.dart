@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'screens/home.dart';
 import 'screens/login.dart';
+import 'screens/slack_team_email.dart';
+import 'screens/slack_team_password.dart';
 
 class App extends StatelessWidget {
   // This widget is the root of your application.
@@ -13,7 +15,9 @@ class App extends StatelessWidget {
       ),
       home: LoginScreen(),
       routes: <String, WidgetBuilder>{
-        LoginScreen.routeName: (BuildContext context) => LoginScreen()
+        LoginScreen.routeName: (BuildContext context) => LoginScreen(),
+        SlackTeamEmailScreen.routeName: (BuildContext context) => SlackTeamEmailScreen()
+
       },
     );
   }
