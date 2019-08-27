@@ -32,8 +32,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   Image.asset(AppImages.clock, width: ScreenData.screenWidth * 0.5556, height: ScreenData.screenHeight * 0.3125),
                 ],
               ),
-              Text('Lunch Time'),
-              Text('Up for munchies?'),
+              Text(' '),
+              Text('Up for munchies?', style: Theme.of(context).textTheme.body1.copyWith(color: AppTheme.greyText
+              ),),
               //
               Container(
                 height: ScreenData.screenHeight * 0.484,
