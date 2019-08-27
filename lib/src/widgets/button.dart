@@ -22,13 +22,13 @@ class Button {
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              Container(
-                child: Icon(
-                  iconData,
-                  color: labelColor,
-                  size: 30,
-                ),
-              ),
+//              Container(
+//                child: Icon(
+//                  iconData,
+//                  color: labelColor,
+//                  size: 30,
+//                ),
+//              ),
               Expanded(
                 child: Text(
                   label,
@@ -43,6 +43,7 @@ class Button {
             ],
           ),
         ),
-        onPressed: onPressed);
+        onPressed: onPressed
+    );
   }
 }

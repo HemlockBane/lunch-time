@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:lunch_time_app/src/widgets/theme.dart';
 import '../constants/app_images.dart';
 import '../widgets/screen_data.dart';
 import '../widgets/wave_painter.dart';
@@ -42,15 +43,37 @@ class _LoginScreenState extends State<LoginScreen> {
                       width: ScreenData.screenWidth,
                       child: Image.asset(AppImages.wavyBackground, fit: BoxFit.cover,),
                     ),
-//                    SizedBox(height: 10,),
-//                    Button.signInOption(
-//                      context: context,
-//                      buttonColor: Colors.white,
-//                      labelColor: Colors.black,
-//                      iconData: Icons.message,
-//                      borderRadius: 10,
-//                      onPressed: (){}
-//                    )
+                    Column(
+                      children: <Widget>[
+                        SizedBox(height: 120,),
+                        Container(
+                          margin: EdgeInsets.only(bottom: 10),
+                          padding: EdgeInsets.symmetric(horizontal: 35),
+                          child: Button.signInOption(
+                              context: context,
+                              buttonColor: Colors.white,
+                              label: 'Log in',
+                              labelColor: AppTheme.peachButton,
+                              iconData: Icons.message,
+                              borderRadius: 30,
+                              onPressed: (){}
+                          ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.symmetric(horizontal: 35),
+                          child: Button.signInOption(
+                              context: context,
+                              buttonColor: AppTheme.peachButton,
+                              label: 'Sign up',
+                              labelColor: Colors.white,
+                              iconData: Icons.message,
+                              borderRadius: 30,
+                              onPressed: (){}
+                          ),
+                        )
+
+                      ],
+                    ),
                   ],
                 ),
               )
